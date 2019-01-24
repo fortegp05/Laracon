@@ -5,6 +5,9 @@ namespace LaravelJpCon\q002;
 /**
  * Class YamanoteLine
  * @package LaravelJpCon\Question\q002
+ * テストのヒント
+ * privateなプロパティをどうテストするか?テストする必要があるか?
+ * 上限に対するテスト
  */
 class YamanoteLine
 {

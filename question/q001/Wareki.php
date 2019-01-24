@@ -3,6 +3,10 @@
 /**
  * Created by PhpStorm.
  * User: fortegp05
+ *
+ * テストのヒント
+ * 入力値のパターンを複数考える
+ * テストを書くときに引数が複数あるときにどう書くか?
  */
 
 namespace LaravelJpCon\q001;
