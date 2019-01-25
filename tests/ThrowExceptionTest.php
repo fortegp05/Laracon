@@ -1,11 +1,10 @@
 <?php
-/**
- */
 
-use LaravelJpCon\qqqq\ThrowException;
+use LaravelJpCon\q006\ThrowException;
 use PHPUnit\Framework\TestCase;
 
 /**
+ * Class ThrowExceptionTest
  */
 class ThrowExceptionTest extends TestCase
 {
@@ -21,6 +20,7 @@ class ThrowExceptionTest extends TestCase
         $this->expectException(\ArgumentCountError::class);
         $this->obj->callExplodeThrowsException("test");
     }
+
     public function testExplodeThrowsException_argumentStrIsTooShort()
     {
         $this->expectException(\Exception::class);
@@ -34,6 +34,7 @@ class ThrowExceptionTest extends TestCase
         $this->expectExceptionMessage(ThrowException::MESSAGE_ARGUMENT_IS_TOO_SHORT);
         $this->obj->callExplodeReturnTypeIsBad("t");
     }
+
     public function testExplodeReturnTypeIsBad_SignatureIsBad()
     {
         $expected = ['a', 'b'];
@@ -47,6 +48,7 @@ class ThrowExceptionTest extends TestCase
         $this->expectExceptionMessage(ThrowException::MESSAGE_ARGUMENT_IS_TOO_SHORT);
         $this->obj->callExplodeNormally("t");
     }
+
     public function testExplodeNormally()
     {
         $expected = ['a', 'b', 'c'];
