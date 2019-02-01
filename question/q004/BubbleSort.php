@@ -3,6 +3,19 @@
 namespace LaravelJpCon\q004;
 
 /**
+ * テスト内容の説明
+ *   バブルソートのテスト。
+ *   3問目は配列が入出力になる場合のメソッドに対してテストを書きます。
+ *   このメソッドは所謂バブルソートを実装したメソッドになります。
+ *   与えられた引数の配列を昇順でソートするしますので、
+ *   引数に配列を与え、戻り値に引数を取ります。
+ *   この戻り値の引数をどうテストするか?という問題になります。
+ *
+ * テストのヒント
+ * 　assertArraySubset(array $subset, array $array[, bool $strict = '', string $message = ''])
+ */
+
+/**
  * Created by PhpStorm.
  * User: fortegp05
  */

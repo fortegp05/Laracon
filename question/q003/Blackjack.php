@@ -8,6 +8,27 @@ namespace LaravelJpCon\q003;
  */
 
 /**
+ * テスト内容の説明
+ *   簡易的なブラックジャックゲームをテストする問題。
+ *   乱数で結果が変わる処理をどうテストするか?
+ *   結果が標準出力の場合はどうするチェックするか?
+ *   昔のバッチ処理などに使えるかと思います。
+ *   ぜひ、ヒントを見ながら解いてみてください。
+ *
+ * テストのヒント
+ *  // リフレクションとアクセス権限のセット
+ *  new \ReflectionClass(ClassName)
+ *  getMethod
+ *  getProperty
+ *  setAccessible
+ *  setValue($class, value)
+ *
+ *  // 標準出力の取得。
+ *  ob_start();
+ *  $var = ob_get_clean();
+ */
+
+/**
  * Class Blackjack
  * ルール：カードを引いていき、21を超えたら負け。
  * 21以下で勝負した時にディーラー(COM)との比較で21に近い方が勝ち。

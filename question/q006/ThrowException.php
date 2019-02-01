@@ -6,6 +6,18 @@ declare(strict_types=1);
 namespace LaravelJpCon\q006;
 
 /**
+ * テスト内容の説明
+ *   例外が発生する実装になっているソースコードに対して、
+ *   どうテストを書くか?という問題です。
+ *   引数不足時の例外、戻り値の型不正などの場合にどうテストを書くか?
+ *   実際にIDEなどを使っているとこういったことはないかもしれませんが、
+ *   意図的に例外を返す実装を想定してテストを書いてみてください。
+ *
+ * テストのヒント
+ *   expectException(\TypeError::class);
+ */
+
+/**
  * Class ThrowException
  * @package LaravelJpCon\q006
  */
